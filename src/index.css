@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Segoe UI', 'Roboto' 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif;
+  outline: none;
 }
 
 :root {
