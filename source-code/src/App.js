@@ -1,9 +1,11 @@
+import NavgationBar from "./components/NavgationBar";
+import Home from './pages/Home/Home'
 function App() {
   return (
-    <div className="App">
-      <h1>hello worled</h1>
-      <h1>hello worled</h1>
-    </div>
+    <>
+      <NavgationBar />
+        <Home />
+    </>
   );
 }
 

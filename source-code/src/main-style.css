@@ -1,0 +1,10 @@
+:root {
+    .dark{
+        --main-color: blue;
+        --text: #888;
+    }
+    .light{
+        --main-color: #888;
+        --text: blue;
+    }
+}
