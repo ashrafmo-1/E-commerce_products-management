@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {BsCart4} from "react-icons/bs";
 import Table from 'react-bootstrap/Table';
-
 import pro from '../assets/images/f3.jpg'
 
 const Cart = () => {
@@ -13,7 +12,7 @@ const Cart = () => {
     const handleShow = () => setShow(true);
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button  className='w-25  ' variant="danger" onClick={handleShow}>
                 <BsCart4 />
             </Button>
 

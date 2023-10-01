@@ -6,7 +6,15 @@
     .light{
         --main-color: #888;
         --text: blue;
+
+        
     }
+    
+}
+
+
+body{
+    height: 500rem;
 }
 
 .flex-center {
@@ -14,3 +22,10 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+/* products */
+
+
