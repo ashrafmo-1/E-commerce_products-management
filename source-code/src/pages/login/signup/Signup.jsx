@@ -35,6 +35,7 @@ export default function Signup() {
     </label>
     <button class="submit">Submit</button>
     <p class="signin">Already have an acount ? <Link to="/login"> Sign in</Link> </p>
+    <p class="signin">Are you admin? <Link to="/dashboard"> dashboard</Link> </p>
     </form>
     </div>
 </>

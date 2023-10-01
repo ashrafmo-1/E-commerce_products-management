@@ -1,0 +1,23 @@
+.sideBar {
+    width: 20%;
+    min-height: calc(100vh - 56px);
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 0 10px;
+    gap: 20px;
+}
+
+.sideBar-link {
+    width: 100%;
+    height: 40px;
+    background-color: darkblue;
+    border-radius: 4px;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+}

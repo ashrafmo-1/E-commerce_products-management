@@ -1,8 +1,14 @@
-import React from 'react';
+import './sidebar.css'
+import {Link} from "react-router-dom";
 
 const SIdeBar = (props) =>{
     return(
-        <h1>SIdeBar</h1>
+        <div className={'sideBar'}>
+            <Link to={'/dashboard/ProductsManagement'} className={'sideBar-link'}>management products</Link>
+            <Link to={'/'} className={'sideBar-link'}>users</Link>
+            <Link to={'/'} className={'sideBar-link'}>add user</Link>
+            <Link to={'/'} className={'sideBar-link'}>workers</Link>
+        </div>
     )
 }
 

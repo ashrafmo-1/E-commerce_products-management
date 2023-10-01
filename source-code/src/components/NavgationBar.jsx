@@ -12,7 +12,7 @@ const NavgationBar = () => {
   return (
     <Navbar bg="primary" expand="lg" data-bs-theme="dark">
       <Container>
-        <Link to="/" className={"fw-bold"}> E-commerce </Link>
+        <Link to="/" className={"fw-bold navbar-brand"}> E-commerce </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '120px' }} navbarScroll>

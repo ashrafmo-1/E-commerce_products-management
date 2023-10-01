@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f769dfe-ab55-405f-8972-6e78c598b5ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/BTN/Btns.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BTN/btn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Navgation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/SIdeBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/DashContent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Products-management.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navgation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Navgation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/SIdeBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/SIdeBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavgationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavgationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signup/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signup/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/signup/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signup/Signup.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,8 @@
       <workItem from="1696112325566" duration="4548000" />
       <workItem from="1696133600003" duration="635000" />
       <workItem from="1696139607867" duration="4447000" />
-      <workItem from="1696183855569" duration="5968000" />
+      <workItem from="1696183855569" duration="6423000" />
+      <workItem from="1696195052675" duration="5093000" />
     </task>
     <servers />
   </component>
