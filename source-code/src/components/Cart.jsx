@@ -4,6 +4,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import {BsCart4} from "react-icons/bs";
 import Table from 'react-bootstrap/Table';
 import pro from '../assets/images/f3.jpg'
+import Btns from "./BTN/Btns";
 
 const Cart = () => {
     const [show, setShow] = useState(false);
@@ -12,9 +13,8 @@ const Cart = () => {
     const handleShow = () => setShow(true);
     return (
         <>
-            <Button  className='w-25  ' variant="danger" onClick={handleShow}>
-                <BsCart4 />
-            </Button>
+
+            <Btns content={<BsCart4 />} click={handleShow} />
 
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>

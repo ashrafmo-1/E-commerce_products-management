@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Cart from "./Cart";import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from 'react-router-dom'
+import {BsCart4} from "react-icons/bs";
+import Btns from "./BTN/Btns";
 
 const NavgationBar = () => {
   return (
@@ -14,11 +16,8 @@ const NavgationBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '120px' }} navbarScroll>
-          <Nav className="me-auto">
-            <Nav.Link href=""> <Form.Control style={{width: '400px'}} type="text" placeholder="Search" className="mr-sm-2" /> </Nav.Link>
             <Link to="/signup"> <Button className={"mx-1"} variant="success"> login/signUp </Button> </Link>
             <Cart />
-          </Nav>
         </Nav>
         </Navbar.Collapse>
       </Container>

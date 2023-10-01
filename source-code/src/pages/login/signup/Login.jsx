@@ -1,7 +1,10 @@
 import {Link} from "react-router-dom"
+import NavgationBar from "../../../components/NavgationBar";
 
 export default function Login() {
   return (
+      <>
+      <NavgationBar />
    <div style={{height: 'calc(100vh - 56px)'}} className={'flex-center'}>
    <form class="form">
    <p class="title">login </p>
@@ -23,5 +26,6 @@ export default function Login() {
    <p class="signin">Dont have an acount ? <Link to="/signup"> signup</Link> </p>
 </form>
    </div>
+      </>
   )
 }
