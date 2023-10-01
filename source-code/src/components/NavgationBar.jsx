@@ -9,13 +9,13 @@ const NavgationBar = () => {
   return (
     <Navbar bg="primary" expand="lg" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="" className={"fw-bold"}> E-commerce </Navbar.Brand>
+        <Navbar.Brand href="/home" className={"fw-bold"}> E-commerce </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '120px' }} navbarScroll>
           <Nav className="me-auto">
             <Nav.Link href=""> <Form.Control style={{width: '400px'}} type="text" placeholder="Search" className="mr-sm-2" /> </Nav.Link>
-            <Nav.Link href=""> <Button className={"mx-1"} variant="success"> login/signUp </Button> </Nav.Link>
+            <Nav.Link href="/signup"> <Button className={"mx-1"} variant="success"> login/signUp </Button> </Nav.Link>
             <Cart />
           </Nav>
         </Nav>
