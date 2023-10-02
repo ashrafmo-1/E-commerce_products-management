@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Navgation = (props) => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 1px 0px'}}>
+        <Navbar expand="lg" data-bs-theme="dark" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 1px 0px', backgroundColor: '#0077b6'}}>
             <Container fluid>
                 <Link to="/" className={"fw-bold navbar-brand"}> e-commerce Dashboard </Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -18,5 +18,4 @@ const Navgation = (props) => {
         </Navbar>
     )
 }
-
 export default Navgation;

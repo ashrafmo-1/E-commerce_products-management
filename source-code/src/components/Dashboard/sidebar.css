@@ -1,7 +1,7 @@
 .sideBar {
     width: 20%;
     min-height: calc(100vh - 56px);
-    background-color: cadetblue;
+    background-color: #001d3d;
     display: flex;
     flex-direction: column;
     padding: 40px 10px 0 10px;
@@ -11,7 +11,7 @@
 .sideBar-link {
     width: 100%;
     height: 40px;
-    background-color: darkblue;
+    background-color: #0077b6;
     border-radius: 4px;
     padding-left: 5px;
     font-size: 18px;
@@ -20,4 +20,6 @@
     align-items: center;
     text-decoration: none;
     color: #eee;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }

@@ -32,7 +32,7 @@ const ProductsManagement = () => {
             <h2 style={{color: 'darkblue'}}> products management </h2>
             <p style={{color: '#777'}}> this site privet from admins only </p>
             <Table striped bordered responsive className={''} >
-                <thead>
+                <thead className={'sticky-top'}>
                 <tr>
                     <th className={'text-center'}>photo</th>
                     <th className={'text-center'}>id</th>
