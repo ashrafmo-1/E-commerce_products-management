@@ -4,7 +4,8 @@ import Home from "./pages/Home/Home";
 import Signup from "../src/pages/login/signup/Signup.jsx";
 import Login from "../src/pages/login/signup/Login";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import ProductsManagement from "./components/Dashboard/Products-management"; // admins only
+import ProductsManagement from "./components/Dashboard/Products-management";
+import DashContent from "./components/Dashboard/DashContent"; // admins only
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path= "/signup" element={<Signup/>}/>
         <Route path= "/login" element={<Login/>}/>
         <Route path= "/dashboard" element={<Dashboard />} >
+            <Route path={''} element={<DashContent />} />
             <Route path={'ProductsManagement'} element={<ProductsManagement />} />
         </Route>
       </Routes>
