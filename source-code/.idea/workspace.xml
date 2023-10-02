@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1f769dfe-ab55-405f-8972-6e78c598b5ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/DashContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/DashContent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Navgation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Navgation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Products-management.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Products-management.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/SIdeBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/SIdeBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Swiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Swiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Products/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Products/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/Products.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +31,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/products managment react and php(laravel)/E-commerce_products-management_react.js/source-code/src/assets/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/products managment react and php(laravel)/E-commerce_products-management_react.js/source-code/src/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -82,7 +80,8 @@
       <workItem from="1696215334746" duration="2293000" />
       <workItem from="1696238660084" duration="2221000" />
       <workItem from="1696242753054" duration="3352000" />
-      <workItem from="1696255897526" duration="2351000" />
+      <workItem from="1696255897526" duration="2507000" />
+      <workItem from="1696272470320" duration="6935000" />
     </task>
     <servers />
   </component>
