@@ -13,20 +13,12 @@ const [passwordR,setPasswordR] = useState("");
 const [Accept,setAccept] = useState(false);
 const[emailerror,setemailError] =useState("");
 
-
-
-
-
-
-
-
  async function Submit(e){
     let flag = true ;
     e.preventDefault();
     setAccept(true);
 
   name ===  "" || password.length<8 || passwordR !== password?  flag = false : flag = true;
-
   
 try {
     if(flag){
@@ -40,6 +32,8 @@ try {
 
     if(res.status ===200 ){
         window.localStorage.setItem("email",email);
+        window.location.pathname= "/"
+
 
     }
 

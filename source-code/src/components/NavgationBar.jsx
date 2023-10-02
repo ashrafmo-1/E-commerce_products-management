@@ -9,6 +9,7 @@ import {BsCart4} from "react-icons/bs";
 import Btns from "./BTN/Btns";
 
 const NavgationBar = () => {
+
   return (
     <Navbar bg="primary" expand="lg" data-bs-theme="dark">
       <Container>
@@ -16,7 +17,17 @@ const NavgationBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '120px' }} navbarScroll>
-            <Link to="/signup"> <Button className={"mx-1"} variant="success"> login/signUp </Button> </Link>
+
+
+                { ( window.localStorage.getItem("email") ? 
+                   <Link to="/signup" onClick={(logout) => {
+                    window.localStorage.removeItem("email")
+                    window.location.pathname ="/"
+                   }}> <Button className={"mx-1"} variant="danger"> logout</Button> </Link> 
+                :  <Link to="/signup"> <Button className={"mx-1"} variant="success"> login/signUp </Button> </Link>
+            )}
+             
+
             <Cart />
         </Nav>
         </Navbar.Collapse>
@@ -26,3 +37,4 @@ const NavgationBar = () => {
 };
 
 export default NavgationBar;
+
