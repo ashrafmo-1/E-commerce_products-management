@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
+}
+
+a {
+    text-decoration: none !important;
+}
+
 :root {
     .dark{
         --main-color: blue;
@@ -6,16 +18,19 @@
     .light{
         --main-color: #888;
         --text: blue;
-
-        
     }
-    
 }
 
 .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 ::-webkit-scrollbar {
@@ -28,4 +43,16 @@
 
 ::-webkit-scrollbar-thumb {
     background: #000;
+}
+
+.main-title {
+    background-color: #eee;
+    transform: translate(50%);
+    width: 250px;
+    color: darkblue;
+    border-radius: 4px;
+}
+
+.swiper-products {
+    width: 50%;
 }

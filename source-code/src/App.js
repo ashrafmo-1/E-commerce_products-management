@@ -5,12 +5,14 @@ import Signup from "../src/pages/login/signup/Signup.jsx";
 import Login from "../src/pages/login/signup/Login";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ProductsManagement from "./components/Dashboard/Products-management";
-import DashContent from "./components/Dashboard/DashContent"; // admins only
+import DashContent from "./components/Dashboard/DashContent";
+import MainHeader from "./components/MainHeader"; // admins only
 
 
 function App() {
   return (
     <>
+      <MainHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path= "/signup" element={<Signup/>}/>

@@ -7,13 +7,15 @@ import Cart from "./Cart";import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from 'react-router-dom'
 import {BsCart4} from "react-icons/bs";
 import Btns from "./BTN/Btns";
+import {HiBars3BottomLeft} from "react-icons/hi2";
 
 const NavgationBar = () => {
 
   return (
     <Navbar bg="primary" expand="lg" data-bs-theme="dark">
       <Container>
-        <Link to="/" className={"fw-bold navbar-brand"}> E-commerce </Link>
+        <Link className={"navbar-toggle-bars btn btn-outline-dark mx-4"} > <HiBars3BottomLeft /> </Link>
+        <Link to="/" className={"fw-bold navbar-brand"}> M&A store </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '120px' }} navbarScroll>

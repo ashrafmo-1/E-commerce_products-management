@@ -7,7 +7,10 @@ const Home = () => {
   return (
     <>
       <NavgationBar />
-      <Swiper />
+      <div className={'d-flex justify-content-between'}>
+          <h1>taps links</h1>
+          <Swiper />
+      </div>
       <Brands />
       <Product />
     </>

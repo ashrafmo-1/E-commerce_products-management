@@ -1,0 +1,12 @@
+.main-header {
+    text-transform: capitalize;
+}
+
+.welcome-link,
+.welcome-title {
+color: rgb(133,133,133);
+}
+
+.welcome-link span {
+    color: rgb(85,178,218);
+}

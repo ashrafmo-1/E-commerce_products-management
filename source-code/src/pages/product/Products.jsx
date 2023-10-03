@@ -14,15 +14,13 @@ export default function Products() {
   return (
     <>
       <div id="product" className="product">
-        <h1 style={{ color: " black" }}>Product</h1>
-        <div style={{ gap: "20px" }} className="imgs col-lg-16 ">
-
+        <h1 className={'main-title'}>Product</h1>
+        <div style={{ gap: "20px" }} className="imgs col-lg-16 ">s
             {products.map(product => (
                 <Card style={{width: '14rem'}} className={'d-flex align-items-center'} key={product.id}>
                 <ProductCard image={product.image} title={product.title.slice(0, 10)} description={product.category} />
                 </Card>
             ))}
-
         </div>
       </div>
     </>

@@ -83,10 +83,10 @@ export default function Login() {
        <input required="" placeholder="" type="password" class="input"
        onChange={(e) => setPassword(e.target.value)}
        />
-            {Accept&& emailerror === 401 &&  <p style={{fontSize:"10px" ,
-                          color:"red"}}> PassWord error </p>}
-
-       <span>Password</span>
+            {
+                Accept&& emailerror === 401 &&  <p style={{fontSize:"10px" ,
+                color:"red"}}> PassWord error </p>}
+                <span>Password</span>
    </label>
    
    <button class="submit">Submit</button>
