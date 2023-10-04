@@ -48,7 +48,6 @@ const ProductsManagement = () => {
                         <td className={'text-center'}>${product.price}</td>
                         <td className={'gap-2 d-flex justify-content-center'}>
                             <Button variant={"outline-danger"} onClick={() => removeProduct(product)}>X</Button>
-                            <Button variant={"outline-primary"}>show</Button>
                             <Button variant={"outline-primary"}>edit</Button>
                         </td>
                     </tr>

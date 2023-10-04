@@ -11,33 +11,33 @@ export const Brands = () => {
     <Container>
       <Col>
         <Row>
-          <div className={'flex-center gap-1 mb-5 mt-3'}>
+          <div className={'flex-center gap-2 mb-5 mt-3'}>
             <div className={'box brand-box'}>
-              <img src={beand1} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <img src={beand1} />
               <p className={'brand-content-box'}>
                 <span>brand name</span>
               </p>
             </div>
             <div className={'box brand-box'}>
-              <img src={beand2} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <img src={beand2} />
               <p className={'brand-content-box'}>
                 <span>brand name</span>
               </p>
             </div>
             <div className={'box brand-box'}>
-              <img src={beand1} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <img src={beand1} />
               <p className={'brand-content-box'}>
                 <span>brand name</span>
               </p>
             </div>
             <div className={'box brand-box'}>
-              <img src={beand3} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <img src={beand3} />
               <p className={'brand-content-box'}>
                 <span>brand name</span>
               </p>
             </div>
             <div className={'box brand-box'}>
-              <img src={beand4} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <img src={beand4} />
               <p className={'brand-content-box'}>
                 <span>brand name</span>
               </p>
