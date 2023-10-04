@@ -2,8 +2,6 @@ import './dashboard.css'
 import Navigation from '../../components/Dashboard/Navgation'
 import SIdeBar from "../../components/Dashboard/SIdeBar";
 import {Outlet, Route, Routes} from "react-router-dom";
-import DashContent from "../../components/Dashboard/DashContent";
-import ProductsManagement from "../../components/Dashboard/Products-management";
 
 const Dashboard = (props) => {
     return(
