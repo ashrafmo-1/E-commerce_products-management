@@ -2,26 +2,27 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
+    width: 450px;
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
     position: relative;
     margin: auto;
+  background-color: #eee;
   }
   
   .title {
     font-size: 28px;
     color: royalblue;
     font-weight: 600;
-    letter-spacing: -1px;
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 30px;
   }
   
-  .title::before,.title::after {
+  .title::before,
+  .title::after {
     position: absolute;
     content: "";
     height: 16px;
@@ -76,16 +77,6 @@
     outline: 0;
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
   }
   
   .form label .input:placeholder-shown + span {

@@ -32,65 +32,35 @@ export default function Login() {
     
     
         }
-    
-    
-    
        }
-    
     } catch(err) {
         setemailError(err.response.status)
     } };
-     
-    
-    
-    
-
-
-
-
-
-    
   return (
-
-
-
-
-
-
-
-
-
-
-
       <>
       <NavgationBar />
-   <div style={{height: 'calc(100vh - 56px)'}} className={'flex-center'}>
+   <div style={{height: 'calc(100vh - 88px)'}} className={'flex-center'}>
    <form class="form" onSubmit={Submit}>
    <p class="title">login </p>
    <p class="message">login now and get full access to our app. </p>
    <div class="flex">
    </div>
-
    <label>
        <input required="" placeholder="" type="email" class="input"
        onChange={(e) => setEmail(e.target.value)}/>
-                                   {Accept && emailerror === 422 }
 
        <span>Email</span>
    </label>
-       
+
    <label>
-       <input required="" placeholder="" type="password" class="input"
-       onChange={(e) => setPassword(e.target.value)}
-       />
-            {
-                Accept&& emailerror === 401 &&  <p style={{fontSize:"10px" ,
-                color:"red"}}> PassWord error </p>}
+       <input required="" placeholder="" type="password" class="input"xonChange={(e) => setPassword(e.target.value)} />
                 <span>Password</span>
    </label>
-   
+
    <button class="submit">Submit</button>
-   <p class="signin">Dont have an acount ? <Link to="/signup"> signup</Link> </p>
+                                   {Accept && emailerror === 422 }
+            { Accept&& emailerror === 401 &&  <p style={{fontSize:"10px" , color:"red"}}> PassWord error </p>}
+   <p class="signin">create new account ? <Link to="/signup"> Register</Link> </p>
 </form>
    </div>
       </>
