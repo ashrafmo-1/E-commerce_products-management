@@ -1,6 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import {useEffect, useState} from "react";
-// images test
+
+import './swiper.css'
 
 const Swiper = () => {
   const [index, setIndex] = useState(0);

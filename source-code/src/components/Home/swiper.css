@@ -1,0 +1,17 @@
+.carousel  .carousel-indicators button {
+    width: 14px;
+    height:14px;
+    border-radius: 50%;
+}
+.carousel  .carousel-indicators button.active {
+    background-color: #001d3d;
+}
+
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+    background-color: #001d3d;
+    width: 40px;
+    height: 40px;
+    font-size: 5rem;
+    border-radius: 50%;
+}
