@@ -4,6 +4,8 @@ import {useState} from "react";
 
 const ProductCard = (props) => {
 
+  
+
   return (
       <>
       <Card.Img style={{ height: "10rem", width: '10rem', padding: '6px' }} variant="top" src={props.image} />
