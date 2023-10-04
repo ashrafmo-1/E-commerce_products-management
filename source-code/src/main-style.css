@@ -1,8 +1,7 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: none !important;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
 }
 
@@ -12,8 +11,8 @@ a {
 
 :root {
     .dark{
-        --main-color: blue;
-        --text: #888;
+        --main-color: #0077b6;
+        --text: #001d3d;
     }
     .light{
         --main-color: #888;
@@ -53,6 +52,20 @@ a {
     border-radius: 4px;
 }
 
+/*home page*/
 .swiper-products {
-    width: 50%;
+    width: 75%;
+}
+
+.Categories-section-link{
+    border-radius: 4px;
+    background-color: #0077b6;
+}
+
+.sect-offers {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url('assets/images/banars/b1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #eee;
 }
