@@ -69,3 +69,31 @@ a {
     background-size: cover;
     color: #eee;
 }
+
+.brand-box {
+    background-color: #eee;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-box .brand-content-box {
+    top: -100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.49);
+    border-radius: 8px;
+    transition: .5s
+}
+
+.brand-box:hover .brand-content-box {
+    top: 0;
+}
+
+.brand-box:hover .brand-content-box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}

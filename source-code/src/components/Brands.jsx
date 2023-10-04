@@ -10,79 +10,42 @@ export const Brands = () => {
   return (
     <Container>
       <Col>
-        <Row className="gap-4 justify-content-center">
-          <Card style={{ width: "14rem" }} className="mt-3 align-items-center">
-            <Card.Img
-              variant="top"
-              src={beand1}
-              style={{ width: "10rem", height: "6rem", padding: "1rem" }}
-            />
-            <Card.Body>
-              <Card.Title className="text-center"> electrec </Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "14rem" }} className="mt-3 align-items-center">
-            <Card.Img
-              variant="top"
-              src={beand2}
-              style={{ width: "10rem", height: "6rem", padding: "1rem" }}
-            />
-            <Card.Body>
-              <Card.Title className="text-center"> electrec </Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "14rem" }} className="mt-3 align-items-center">
-            <Card.Img
-              variant="top"
-              src={beand3}
-              style={{ width: "10rem", height: "6rem", padding: "1rem" }}
-            />
-            <Card.Body>
-              <Card.Title className="text-center"> electrec </Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "14rem" }} className="mt-3 align-items-center">
-            <Card.Img
-              variant="top"
-              src={beand4}
-              style={{ width: "10rem", height: "6rem", padding: "1rem" }}
-            />
-            <Card.Body>
-              <Card.Title className="text-center"> electrec </Card.Title>
-            </Card.Body>
-          </Card>
+        <Row>
+          <div className={'flex-center gap-1 mb-5 mt-3'}>
+            <div className={'box brand-box'}>
+              <img src={beand1} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <p className={'brand-content-box'}>
+                <span>brand name</span>
+              </p>
+            </div>
+            <div className={'box brand-box'}>
+              <img src={beand2} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <p className={'brand-content-box'}>
+                <span>brand name</span>
+              </p>
+            </div>
+            <div className={'box brand-box'}>
+              <img src={beand1} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <p className={'brand-content-box'}>
+                <span>brand name</span>
+              </p>
+            </div>
+            <div className={'box brand-box'}>
+              <img src={beand3} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <p className={'brand-content-box'}>
+                <span>brand name</span>
+              </p>
+            </div>
+            <div className={'box brand-box'}>
+              <img src={beand4} style={{ width: "10rem", height: "6rem", padding: ".5rem" }} />
+              <p className={'brand-content-box'}>
+                <span>brand name</span>
+              </p>
+            </div>
+          </div>
         </Row>
       </Col>
     </Container>
   );
 };
 export default Brands;
-
-//   <Card style={{ width: "14rem" }} className="mt-3">
-//     <Card.Img
-//       variant="top"
-//       src={beand2}
-//       style={{ width: "10rem", height: "10rem" }}
-//     />
-//     <Card.Body>
-//       <Card.Title className="text-center"> laptop </Card.Title>
-//     </Card.Body>
-//   </Card>
-//   <Card style={{ width: "14rem" }} className="mt-3">
-//     <Card.Img variant="top" src={beand3} />
-//     <Card.Body>
-//       <Card.Title className="text-center"> miusec </Card.Title>
-//     </Card.Body>
-//   </Card>
-//   <Card style={{ width: "14rem" }} className="mt-3">
-//     <Card.Img variant="top" src={beand4} />
-//     <Card.Body>
-//       <Card.Title className="text-center"> smart </Card.Title>
-//     </Card.Body>
-//   </Card>
-//   <Card style={{ width: "14rem" }} className="mt-3">
-//     <Card.Img variant="top" src={beand5} />
-//     <Card.Body>
-//       <Card.Title className="text-center"> electrec </Card.Title>
-//     </Card.Body>
-//   </Card>
