@@ -49,11 +49,15 @@ p{
 }
 
 .main-title {
-    background-color: #eee;
-    transform: translate(50%);
-    width: 250px;
-    color: darkblue;
+    width: 100%;
+    color: #001d3d;
     border-radius: 4px;
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+
+    .main-title-content{
+        font-size: 16px !important;
+    }
 }
 
 /*home page*/
