@@ -8,6 +8,7 @@ import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import MainHeader from "./components/MainHeader"; // admins only
 import ShowUser from "./components/Dashboard/ShowUser";
+import Footer from "./pages/footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path= "showuser" element={ <ShowUser/>  }/>
         </Route>
       </Routes>
+      <Footer/>
     </>
   );
 }
