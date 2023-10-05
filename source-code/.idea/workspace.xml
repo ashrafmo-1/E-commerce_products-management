@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f769dfe-ab55-405f-8972-6e78c598b5ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/product/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/Products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Products-management.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Products-management.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +87,7 @@
       <workItem from="1696420477277" duration="8193000" />
       <workItem from="1696448601757" duration="5871000" />
       <workItem from="1696516962930" duration="327000" />
+      <workItem from="1696542031016" duration="48000" />
     </task>
     <servers />
   </component>
