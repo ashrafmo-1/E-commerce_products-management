@@ -20,7 +20,13 @@ const ProductsManagement = () => {
     // remove products from the list of products
     const removeProduct = (product) => {
         Swal.fire({title: `are you sure delete - ${product.title.slice(0, 20)}`, showCancelButton: true, icon: 'warning'}).then((data) => {
-            data.isConfirmed === true ? fetch(`https://database-products.onrender.com/products/${product.id}`, {method: 'delete'}).then(res => res.json()).then(() => dataRequest()) : null
+            if(data.isConfirmed === true){
+                 fetch(`https://database-products.onrender.com/products/${product.id}`, {method: 'delete'})
+                 .then(res => res.json())
+                 .then(() => dataRequest())
+                }else{
+                    return false;
+                }
         })
     }
     return (

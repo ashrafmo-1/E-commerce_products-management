@@ -7,12 +7,18 @@ const cartProductSlice = createSlice({
     addProduct: (state, action) => {
       state.push(action.paylod);
     },
-    deleteProduct: (state, action) => {},
+    deleteProduct: (state, action) => {
+
+    },
     deleteAll: () => {
       return [];
     },
-    increment: (state, action) => {},
-    decrement: (state, action) => {},
+    increment: (state, action) => {
+
+    },
+    decrement: (state, action) => {
+      
+    },
   },
 });
 export default cartProductSlice;
