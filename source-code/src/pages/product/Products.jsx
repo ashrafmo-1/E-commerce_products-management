@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
-
   const api = "https://database-products.onrender.com/products";
   useEffect(() => {
     fetch(api)
@@ -37,7 +36,8 @@ export default function Products() {
               >
                 <path
                   d="M4.5 1C2.5673 1 1 2.49112 1 4.33081C1 5.81587 1.6125 9.34047 7.6416 12.9034C7.7496 12.9666 7.87358 13 8 13C8.12642 13 8.2504 12.9666 8.3584 12.9034C14.3875 9.34047 15 5.81587 15 4.33081C15 2.49112 13.4327 1 11.5 1C9.5673 1 8 3.01867 8 3.01867C8 3.01867 6.4327 1 4.5 1Z"
-                  stroke="black" fill="red"
+                  stroke="black"
+                  fill="red"
                   strokeLinecap="round"
                 />
               </svg>
@@ -46,6 +46,7 @@ export default function Products() {
                 title={product.title.slice(0, 10)}
                 category={product.title.slice(0, 10)}
                 rate={product.rating.rate}
+                addProuct={product}
               />
             </div>
           ))}
