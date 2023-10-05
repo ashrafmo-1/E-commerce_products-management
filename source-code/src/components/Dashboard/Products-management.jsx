@@ -24,9 +24,9 @@ const ProductsManagement = () => {
                  fetch(`https://database-products.onrender.com/products/${product.id}`, {method: 'delete'})
                  .then(res => res.json())
                  .then(() => dataRequest())
-                }else{
+            }else{
                     return false;
-                }
+            }
         })
     }
     return (

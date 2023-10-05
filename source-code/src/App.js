@@ -8,6 +8,7 @@ import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import MainHeader from "./components/MainHeader"; // admins only
 import ShowUser from "./components/Dashboard/ShowUser";
+import ProductsCart from "./components/ProductsCart";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path={'ProductsManagement'} element={<ProductsManagement />} />
             <Route path= "showuser" element={ <ShowUser/>  }/>
         </Route>
+        <Route path='/cart' element={<ProductsCart />} />
       </Routes>
     </>
   );
