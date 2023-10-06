@@ -1,5 +1,5 @@
 .master-producs-home {
-    background-color: #32131258;
+    background-color: #eee;
 }
 .products-container{
     display: flex;
@@ -16,7 +16,7 @@
     border-radius: 10px;
     background-color: #fff;
     padding: 8px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
 }
 
@@ -76,4 +76,3 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         cursor: pointer;
     }
 }
-

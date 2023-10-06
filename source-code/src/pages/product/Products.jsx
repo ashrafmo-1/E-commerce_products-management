@@ -2,23 +2,22 @@ import { useEffect, useState } from "react";
 import "./Products.css";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import { FaStar } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
-
 import { useDispatch } from "react-redux";
-import addProduct from "../../Redux/slices/Cart-slice";
+import { add } from "../../Redux/slices/cart-slice";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
+
   const api = "https://database-products.onrender.com/products";
   useEffect(() => {
     fetch(api)
       .then((response) => response.json())
-      .then((data) => setProducts(data.slice(0, 12)));
+      .then((data) => setProducts(data.slice(0, 12)))
+      .catch((error) => console.error("cant get any products", error));
   }, []);
-
-  const dispatch = useDispatch();
 
   return (
     <div className="product master-producs-home pb-5">
@@ -27,9 +26,12 @@ export default function Products() {
           {"-"}Product
           <Link className="main-title-content">show more</Link>
         </h1>
-        <div style={{ gap: "20px" }} className="products-container col-lg-16 pt-5" >
-          {products.map((product) => (
-            <div className={"product-card"} key={product.id}>
+        <div
+          style={{ gap: "20px" }}
+          className="products-container col-lg-16 pt-5"
+        >
+          {products.map((prod) => (
+            <div className={"product-card"} key={prod.id}>
               <svg
                 className="hart"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,22 +47,18 @@ export default function Products() {
                   strokeLinecap="round"
                 />
               </svg>
-              <img
-                className="product-image"
-                src={product.image}
-                alt="product"
-              />
+              <img className="product-image" src={prod.image} alt="product" />
               <div className="card-content-body">
-                <div className="card-title">{product.title}</div>
-                <div className="card-category">({product.category})</div>
+                <div className="card-title">{prod.title}</div>
+                <div className="card-category">({prod.category})</div>
                 <div className="icons-control">
                   <div className="card-rate flex-center">
-                    {product.rate} {<FaStar />}
+                    {prod.rate} {<FaStar />}
                   </div>
                   <div
                     className="add-product-cart flex-center"
                     onClick={() => {
-                      dispatch(addProduct(product));
+                      dispatch(add(prod));
                     }}
                   >
                     <FaCartShopping />

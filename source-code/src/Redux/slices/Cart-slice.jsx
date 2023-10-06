@@ -3,9 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 export const cartProductSlice = createSlice({
   name: "cart",
   initialState: [],
-  reduces: {
-    addProduct: (state, action) => {
-      state.push(action.paylod);
+  reducers: {
+    add: (state, action) => {
+      state.push(action.payload);
     },
     deleteProduct: (state, action) => {},
     deleteAll: () => {
@@ -16,7 +16,7 @@ export const cartProductSlice = createSlice({
   },
 });
 
-export const { addProduct, deleteProduct, deleteAll, increment, decrement } =
+export const { add, deleteProduct, deleteAll, increment, decrement } =
   cartProductSlice.actions;
 
 export default cartProductSlice.reducer;

@@ -8,11 +8,7 @@ import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import MainHeader from "./components/MainHeader"; // admins only
 import ShowUser from "./components/Dashboard/ShowUser";
-<<<<<<< HEAD
 import Footer from "./pages/footer/Footer";
-=======
-import ProductsCart from "./components/ProductsCart";
->>>>>>> 04a1afd56d3662777dddd0cb4c50698ef09b74a1
 
 function App() {
   return (
@@ -27,7 +23,6 @@ function App() {
             <Route path={'ProductsManagement'} element={<ProductsManagement />} />
             <Route path= "showuser" element={ <ShowUser/>  }/>
         </Route>
-        <Route path='/cart' element={<ProductsCart />} />
       </Routes>
       <Footer/>
     </>

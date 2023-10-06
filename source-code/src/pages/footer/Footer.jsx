@@ -29,7 +29,7 @@ export default function Footer() {
 
        
 
-<div className='contact' >    
+<div className='contact' >
         <div className='cont'>
             <h3 style={{color:"gold"}}>About Us</h3>
             <h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.     </h5>
@@ -49,36 +49,12 @@ export default function Footer() {
             <h3>Contact Us</h3>
             <h5>       <FaPhone/>     01021702322 / 01007481557  </h5>
         </div>
-
         <div>
         <input placeholder="Enter your email" class="input" name="email" type="email"/>
    <button class="button">Subscribe</button> 
-
         </div>
-
-        
-        
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-        </div>  
+        </div>
     </>
   )
 }

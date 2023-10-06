@@ -4,20 +4,20 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import {Link} from 'react-router-dom'
 import {HiBars3BottomLeft} from "react-icons/hi2";
+import Cart from "./Cart";
+import { useSelector } from "react-redux";
 
 const NavgationBar = () => {
 
+  const products = useSelector((state) => state.cart);
+
   return (
-    <Navbar bg="primary" expand="lg" data-bs-theme="dark">
+    <Navbar expand="lg" data-bs-theme="dark" className="bg-secondary">
       <Container>
         <Link className={"navbar-toggle-bars btn btn-outline-dark mx-4"}>
-          {" "}
           <HiBars3BottomLeft />{" "}
         </Link>
-        <Link to="/" className={"fw-bold navbar-brand"}>
-          {" "}
-          M&A store{" "}
-        </Link>
+        <Link to="/" className={"fw-bold navbar-brand"}> M&A store </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -33,23 +33,19 @@ const NavgationBar = () => {
                   window.location.pathname = "/";
                 }}
               >
-                {" "}
                 <Button className={"mx-1"} variant="danger">
-                  {" "}
                   logout
-                </Button>{" "}
+                </Button>
               </Link>
             ) : (
               <Link to="/signup">
-                {" "}
                 <Button className={"mx-1"} variant="success">
-                  {" "}
-                  login/signUp{" "}
-                </Button>{" "}
+                  login/signUp
+                </Button>
               </Link>
             )}
 
-            <Link to="/cart"> cart</Link>
+            <Cart />
           </Nav>
         </Navbar.Collapse>
       </Container>
