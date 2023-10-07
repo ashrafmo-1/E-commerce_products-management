@@ -2,26 +2,24 @@ import Brands from "../../components/Brands";
 import Swiper from "../../components/Home/Swiper";
 import Product from "../product/Products";
 import NavgationBar from "../../components/NavgationBar";
-import {Link} from "react-router-dom";
 import Offer from "../../components/Offer";
+import bgOffer from "../../assets/images/a6.jpg";
 
 const Home = () => {
   return (
     <>
       <NavgationBar />
-      <div className={'d-flex justify-content-between m-2 p-2 bg-secondary-subtle'} style={{borderRadius: '4px'}}>
-        <div className={'w-25 d-flex flex-column Categories-section-home pb-3 m-1'} style={ {background: '#001d3d', height: '295px', borderRadius: '10px'}}>
-            <Link className={'p-2 mx-3 my-1 mt-2 text-body Categories-section-link'} to={'/'}>mobile</Link>
-            <Link className={'p-2 mx-3 my-1 text-body Categories-section-link'} to={'/'}>shirts</Link>
-            <Link className={'p-2 mx-3 my-1 text-body Categories-section-link'} to={'/'}>haha</Link>
-            <Link className={'p-2 mx-3 my-1 text-body Categories-section-link'} to={'/'}>haha</Link>
-            <Link className={'p-2 mx-3 my-1 text-body Categories-section-link'} to={'/'}>haha</Link>
-            <Link className={'p-2 mx-3 my-1 text-body Categories-section-link'} to={'/'}>haha</Link>
+      <div
+        className={"d-flex justify-content-between m-2 p-2 bg-secondary-subtle gap-4"}
+        style={{ borderRadius: "4px" }}
+      >
+        <div style={{ height: "300px", width: "30%", borderRadius: "10px" }}>
+          <img src={bgOffer} alt="" className="w-100" style={{ height: "300px" }} />
         </div>
-          <Swiper />
+        <Swiper />
       </div>
       <Brands />
-        <Offer />
+      <Offer />
       <Product />
     </>
   );

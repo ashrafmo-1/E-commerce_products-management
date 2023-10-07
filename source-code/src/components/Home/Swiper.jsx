@@ -49,7 +49,7 @@ const Swiper = () => {
           <div className="flex-center flex-row">
             <img
               className="py-3 m-lg-2"
-              style={{ height: "200px", width: "220px" }}
+              style={{ height: "250px", width: "270px" }}
               src={product.image}
               alt={product.title}
             />

@@ -1,31 +1,14 @@
 .Container{
-
    background-color: #283646; 
    color: aliceblue;
-   width: 100%;
-    height: 30rem;
    text-transform: capitalize;
+}
 
-}
-.logo{
-padding: 50px 120px;
-}
 .contact{
- 
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 20px;
-  align-items: center;
   text-align: center;
-}
-.cont h3{
-    font-size: 15px;
-    display: inline-flex;
-    justify-content: space-around;  
-    gap: 30px;
-}
-.enter{
-  margin-top: -50px;
 }
 
 .input {
@@ -37,7 +20,6 @@ padding: 50px 120px;
     border-bottom-left-radius: .5em;
     border: 2px solid #fff;
     flex-wrap: nowrap;
-    
   }
   
   .button {
@@ -53,53 +35,9 @@ padding: 50px 120px;
     cursor: pointer;
     margin-top: 10px;
   }
-  @media screen and (max-width: 680px ) {
-   
-    .cont h3{
-    font-size: 20px;
-   }
-   .cont h5{
-    font-size: 10px;
-   }
-   
 
-    .input{
-        border-radius: 20px;
-        width: 130px;
-        font-size: 10px;
-        margin-right: 10px;
-    }
-    .button{
-        display: flex;
-        width:100px ;
-        border-radius: 20px;
-        font-size: 15px;
-        margin: auto;    
-        margin-top: 15px;
-    }
-    
-  }
-  .line{
-    position: absolute;
-    width:70%;
-    height: 1px;
-    margin: auto;
-    border: #283646;
-    background-color: #ffffff;
-   margin-top:8rem;
-  } 
   .cont2 h3{
     font-size: 10px;
     display: inline-flex;
     justify-content: center;  
-  }
-  @media screen and (max-width: 680px ) {
-   
-    .cont2 h3{
-    font-size: 10px;
-   }
-   .cont h3{
-    font-size: 15px;
-   }
-   
   }
