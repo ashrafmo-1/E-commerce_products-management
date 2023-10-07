@@ -15,7 +15,7 @@ export default function Products() {
   useEffect(() => {
     fetch(api)
       .then((response) => response.json())
-      .then((data) => setProducts(data.slice(0, 12)))
+      .then((data) => setProducts(data.slice(17, -1)))
       .catch((error) => console.error("cant get any products", error));
   }, []);
 
@@ -26,10 +26,7 @@ export default function Products() {
           {"-"}Product
           <Link className="main-title-content">show more</Link>
         </h1>
-        <div
-          style={{ gap: "20px" }}
-          className="products-container col-lg-16 pt-5"
-        >
+        <div className="products-container col-lg-16 pt-5 gap-3">
           {products.map((prod) => (
             <div className={"product-card"} key={prod.id}>
               <svg
@@ -55,12 +52,7 @@ export default function Products() {
                   <div className="card-rate flex-center">
                     {prod.rate} {<FaStar />}
                   </div>
-                  <div
-                    className="add-product-cart flex-center"
-                    onClick={() => {
-                      dispatch(add(prod));
-                    }}
-                  >
+                  <div className="add-product-cart flex-center" onClick={() => { dispatch(add(prod)) }}>
                     <FaCartShopping />
                   </div>
                 </div>

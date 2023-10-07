@@ -1,0 +1,21 @@
+.main-information-cart,
+.product-content-cart:not(:last-child){
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.product-content-cart {
+    padding: 10px 0px;
+    
+    .product-image-cart {
+        width: 30%;
+        height: 100px;
+    }
+
+    .product-info{
+        .product-title{
+            font-size: 18px;
+        }
+        .product-controls {
+        }
+    }
+}

@@ -1,7 +1,8 @@
 .master-producs-home {
     background-color: #eee;
 }
-.products-container{
+
+.products-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +48,6 @@
 }
 
 .icons-control {
-
     .card-rate {
         width: 60px;
         height: 20px;
@@ -60,7 +60,6 @@
         font-size: 18px;
         color: #eee;
     }
-
     .add-product-cart {
         width: 80px;
         height: 40px;

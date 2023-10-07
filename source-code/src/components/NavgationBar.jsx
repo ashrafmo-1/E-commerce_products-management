@@ -44,7 +44,6 @@ const NavgationBar = () => {
                 </Button>
               </Link>
             )}
-
             <Cart />
           </Nav>
         </Navbar.Collapse>

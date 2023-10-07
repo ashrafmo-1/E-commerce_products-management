@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f769dfe-ab55-405f-8972-6e78c598b5ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Store.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/slices/Cart-slice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/slices/Cart-slice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/n4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavgationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavgationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductsCart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/signup/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signup/Signup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/product/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/Products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/product/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/Products.jsx" afterDir="false" />
     </list>
@@ -37,22 +40,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/products managment react and php(laravel)/E-commerce_products-management_react.js/source-code/src/assets/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/products managment react and php(laravel)/E-commerce_products-management_react.js/source-code/src/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -98,6 +101,7 @@
       <workItem from="1696542031016" duration="48000" />
       <workItem from="1696603311636" duration="337000" />
       <workItem from="1696617017296" duration="676000" />
+      <workItem from="1696636502474" duration="8526000" />
     </task>
     <servers />
   </component>
