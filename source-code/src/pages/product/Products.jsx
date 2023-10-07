@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { add } from "../../Redux/slices/cart-slice";
+import { add } from "../../Redux/slices/Cart-slice";
 
 export default function Products() {
   const [products, setProducts] = useState([]);

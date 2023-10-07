@@ -11,7 +11,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min";
 
 // redux toolkit
 import { Provider } from "react-redux";
-import { RTLstore } from "./Redux/store";
+import { RTLstore } from "./Redux/Store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
