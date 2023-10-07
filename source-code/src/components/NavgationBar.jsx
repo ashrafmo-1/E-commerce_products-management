@@ -1,27 +1,24 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import {Link} from 'react-router-dom'
-import {HiBars3BottomLeft} from "react-icons/hi2";
+import { Link } from "react-router-dom";
 import Cart from "./Cart";
-import { useSelector } from "react-redux";
 
 const NavgationBar = () => {
-
-  const products = useSelector((state) => state.cart);
-
   return (
-    <Navbar expand="lg" data-bs-theme="dark" className="bg-secondary">
+    <Navbar
+      expand="lg"
+      data-bs-theme="dark"
+      style={{ borderTop: "1px solid #777", borderBottom: "1px solid #777" }}
+    >
       <Container>
-        <Link className={"navbar-toggle-bars btn btn-outline-dark mx-4"}>
-          <HiBars3BottomLeft />{" "}
+        <Link to="/" className={"fw-bold navbar-brand text-danger"}>
+          M&A store
         </Link>
-        <Link to="/" className={"fw-bold navbar-brand"}> M&A store </Link>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle className="bg-danger" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="ms-auto my-2 my-lg-0"
+            className="ms-auto my-lg-0 gap-3"
             style={{ maxHeight: "120px" }}
             navbarScroll
           >
@@ -33,15 +30,15 @@ const NavgationBar = () => {
                   window.location.pathname = "/";
                 }}
               >
-                <Button className={"mx-1"} variant="danger">
+                <div className={"btn btn-danger"} variant="danger">
                   logout
-                </Button>
+                </div>
               </Link>
             ) : (
               <Link to="/signup">
-                <Button className={"mx-1"} variant="success">
+                <div className={"btn btn-danger"} variant="success">
                   login/signUp
-                </Button>
+                </div>
               </Link>
             )}
             <Cart />
@@ -53,4 +50,3 @@ const NavgationBar = () => {
 };
 
 export default NavgationBar;
-

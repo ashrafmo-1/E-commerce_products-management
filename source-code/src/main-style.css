@@ -62,7 +62,7 @@ p{
 
 /*home page*/
 .swiper-products {
-    width: 75%;
+    width: 70%;
 }
 
 .Categories-section-link{
@@ -121,6 +121,7 @@ p{
 /* cart style */
 .cart-btn {
     position: relative;
+    width: 50px;
 }
 
 .products-length {
