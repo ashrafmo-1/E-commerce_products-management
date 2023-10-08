@@ -27,7 +27,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="btn btn-primary cart-btn" onClick={handleShow}>
+      <div className="btn btn-dark cart-btn " onClick={handleShow}>
         <span className={"products-length"}>{products.length}</span>
         <FaOpencart />
       </div>

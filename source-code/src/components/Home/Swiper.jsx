@@ -39,11 +39,11 @@ const Swiper = () => {
         <Carousel.Item
           className=""
           style={{
-            background: "rgb(0, 119, 182)",
+            background: "#DEEBFE",
             padding: "10px 0px",
             height: "300px",
           }}
-          interval={2000}
+          interval={1000}
           key={product.id}
         >
           <div className="flex-center flex-row">

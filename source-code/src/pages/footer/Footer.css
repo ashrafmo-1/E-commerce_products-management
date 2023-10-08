@@ -11,16 +11,16 @@
   text-align: center;
 }
 
-.input {
-    max-width: 190px;
-    padding: 15px;
-    font-size: 15px;
-    color: black;
-    border-top-left-radius: .5em;
-    border-bottom-left-radius: .5em;
-    border: 2px solid #fff;
-    flex-wrap: nowrap;
-  }
+.input-footer {
+  width: 100px;
+  padding: 15px;
+  font-size: 15px;
+  color: black;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  border: 2px solid #fff;
+  flex-wrap: nowrap;
+}
   
   .button {
     border: none;

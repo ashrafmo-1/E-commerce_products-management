@@ -3,17 +3,18 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
+import { FaBarsStaggered } from "react-icons/fa6";
 
 const NavgationBar = () => {
   return (
-    <Navbar
-      expand="lg"
-      data-bs-theme="dark"
-      style={{ borderTop: "1px solid #777", borderBottom: "1px solid #777" }}
-    >
+    <Navbar expand="lg" data-bs-theme="dark" className="bg-warning bg-gradient">
       <Container>
-        <Link to="/" className={"fw-bold navbar-brand text-danger"}>
-          M&A store
+        <button className="btn btn-outline-dark" style={{ marginRight: "10px" }}>
+          {" "}
+          <FaBarsStaggered />{" "}
+        </button>
+        <Link to="/" className={"fw-bold fs-5 text-dark"}>
+          Dragon store
         </Link>
         <Navbar.Toggle className="bg-danger" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -36,9 +37,7 @@ const NavgationBar = () => {
               </Link>
             ) : (
               <Link to="/signup">
-                <div className={"btn btn-danger"} variant="success">
-                  login/signUp
-                </div>
+                <div className={"btn btn-dark"}>login/signUp</div>
               </Link>
             )}
             <Cart />

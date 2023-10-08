@@ -6,14 +6,11 @@ import Login from "../src/pages/login/signup/Login";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
-import MainHeader from "./components/MainHeader"; // admins only
 import ShowUser from "./components/Dashboard/ShowUser";
-import Footer from "./pages/footer/Footer";
 
 function App() {
   return (
     <>
-      <MainHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path= "/signup" element={<Signup/>}/>
@@ -24,7 +21,6 @@ function App() {
             <Route path= "showuser" element={ <ShowUser/>  }/>
         </Route>
       </Routes>
-      <Footer/>
     </>
   );
 }
