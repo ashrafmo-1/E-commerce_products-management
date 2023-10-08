@@ -18,7 +18,7 @@ function App() {
         <Route path= "/dashboard" element={<Dashboard />} >
             <Route path={''} element={<DashContent />} />
             <Route path={'ProductsManagement'} element={<ProductsManagement />} />
-            <Route path= "showuser" element={ <ShowUser/>  }/>
+            <Route path= "showuser" element={ <ShowUser/>  } />
         </Route>
       </Routes>
     </>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import NavgationBar from "../../../components/NavgationBar";
 import React, { useState } from "react";
 import axios from "axios";
 import avatar from "../../../assets/images/login avatar.png";

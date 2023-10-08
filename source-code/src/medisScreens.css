@@ -1,0 +1,53 @@
+@media(max-width: 1024px) {
+    .contact {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 881px) {
+    .home-header-container {
+        flex-direction: column;
+    }
+
+    .home-header-imagebg {
+        width: 90%;
+        margin: auto;
+    }
+
+    .swiper-products {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .content-slider {
+        flex-direction: column;
+    }
+    .main-header{
+        display: block;
+        text-align: center;
+
+        .welcome-title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width:520px) {
+    .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-control-next .carousel-control-next-icon {
+        display: none;
+    }
+
+    .carousel .carousel-indicators button{
+        width: 12px;
+        height: 8px;
+    }
+}
+
+/* @media(max-width:480px) {
+}
+
+@media(max-width:360px) {
+} */

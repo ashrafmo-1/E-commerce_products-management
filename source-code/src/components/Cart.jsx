@@ -36,7 +36,7 @@ const Cart = () => {
           <Offcanvas.Title>cart</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {products.length > 0 ? (
+          {products.length > 0 && window.localStorage.getItem("product-information") ? (
             <div>
               <div
                 className={

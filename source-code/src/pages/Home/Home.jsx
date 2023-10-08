@@ -5,7 +5,7 @@ import NavgationBar from "../../components/NavgationBar";
 import Offer from "../../components/Offer";
 import bgOffer from "../../assets/images/a6.jpg";
 import MainHeader from "../../components/MainHeader";
-import Footer from '../footer/Footer'
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
@@ -14,11 +14,11 @@ const Home = () => {
       <NavgationBar />
       <div
         className={
-          "d-flex justify-content-between m-2 p-2 bg-secondary-subtle gap-4"
+          "home-header-container d-flex justify-content-between m-2 p-2 bg-secondary-subtle gap-4 h-100"
         }
-        style={{ borderRadius: "4px" }}
       >
-        <div style={{ height: "300px", width: "30%", borderRadius: "10px" }}>
+        <Swiper />
+        <div className="home-header-imagebg">
           <img
             src={bgOffer}
             alt=""
@@ -26,7 +26,6 @@ const Home = () => {
             style={{ height: "300px" }}
           />
         </div>
-        <Swiper />
       </div>
       <Brands />
       <Offer />

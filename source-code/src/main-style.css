@@ -65,6 +65,10 @@ p{
     width: 70%;
 }
 
+.home-header-content {
+    border-radius: 6px;
+}
+
 .sect-offers {
     background-image:linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url('assets/images/banars/b1.jpg');
     background-repeat: no-repeat;

@@ -3,6 +3,7 @@
     height:14px;
     border-radius: 50%;
 }
+
 .carousel  .carousel-indicators button.active {
     background-color: #001d3d;
 }

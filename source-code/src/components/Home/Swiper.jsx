@@ -37,16 +37,15 @@ const Swiper = () => {
     >
       {poducts.map((product) => (
         <Carousel.Item
-          className=""
           style={{
             background: "#DEEBFE",
             padding: "10px 0px",
             height: "300px",
           }}
-          interval={1000}
+          interval={100000}
           key={product.id}
         >
-          <div className="flex-center flex-row">
+          <div className="content-slider flex-center flex-row gap-4">
             <img
               className="py-3 m-lg-2"
               style={{ height: "250px", width: "270px" }}

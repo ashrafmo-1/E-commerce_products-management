@@ -8,36 +8,43 @@
   display:flex;
   justify-content: space-between;
   font-size: 20px;
-  text-align: center;
 }
 
-.input-footer {
-  width: 100px;
-  padding: 15px;
-  font-size: 15px;
-  color: black;
-  border-top-left-radius: .5em;
-  border-bottom-left-radius: .5em;
-  border: 2px solid #fff;
-  flex-wrap: nowrap;
+.categories-section h3{
+color: #92989F;
 }
-  
+
+.categorys-sect {
+  width: 160px;
+}
+
+.footForm{
+  position: relative;
+}
+    .input-footer {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    flex-wrap: nowrap;
+  }
+    
   .button {
     border: none;
-    background-color: #1363DF;
     text-decoration: none;
-    padding: 15px;
-    padding-bottom: 17px;
-    font-size: 17px;
-    color: #fff;
-    border-top-right-radius: .5em;
-    border-bottom-right-radius: .5em;
-    cursor: pointer;
-    margin-top: 10px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
   }
 
-  .cont2 h3{
-    font-size: 10px;
-    display: inline-flex;
-    justify-content: center;  
-  }
+
+
+.foot {
+  font-size: 13px;
+}
