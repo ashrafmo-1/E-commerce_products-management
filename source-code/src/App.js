@@ -7,18 +7,20 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import ShowUser from "./components/Dashboard/ShowUser";
+import AddNewProduct from "./components/Dashboard/AddNewProduct";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path= "/signup" element={<Signup/>}/>
-        <Route path= "/login" element={<Login/>}/>
-        <Route path= "/dashboard" element={<Dashboard />} >
-            <Route path={''} element={<DashContent />} />
-            <Route path={'ProductsManagement'} element={<ProductsManagement />} />
-            <Route path= "showuser" element={ <ShowUser/>  } />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path={""} element={<DashContent />} />
+          <Route path={"ProductsManagement"} element={<ProductsManagement />} />
+          <Route path="showuser" element={<ShowUser />} />
+          <Route path="add-new-product" element={<AddNewProduct />} />
         </Route>
       </Routes>
     </>
