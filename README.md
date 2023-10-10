@@ -37,4 +37,5 @@ firsst project work with team
 - axios
 - redux
 - redux toolkit
-- 
+
+- <h1>notion link https://trail-produce-a21.notion.site/ECommerce-466cafe8862b42a2b0c4e903e8e190cd</h1>
