@@ -8,6 +8,7 @@ import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import ShowUser from "./components/Dashboard/ShowUser";
 import AddNewProduct from "./components/Dashboard/AddNewProduct";
+import ShowProduct from "./components/ShowProduct";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="showuser" element={<ShowUser />} />
           <Route path="add-new-product" element={<AddNewProduct />} />
         </Route>
+        <Route path="/:productInformation" element={<ShowProduct />} />
       </Routes>
     </>
   );

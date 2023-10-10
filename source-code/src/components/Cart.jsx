@@ -9,6 +9,7 @@ import {
   deleteProduct,
   increment,
 } from "../Redux/slices/Cart-slice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [show, setShow] = useState(false);
@@ -36,7 +37,8 @@ const Cart = () => {
           <Offcanvas.Title>cart</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {products.length > 0 && window.localStorage.getItem("product-information") ? (
+          {products.length > 0 &&
+          window.localStorage.getItem("product-information") ? (
             <div>
               <div
                 className={
@@ -96,12 +98,20 @@ const Cart = () => {
                           -
                         </button>
                       </div>
-                      <button
-                        className={"btn btn-outline-danger mt-2"}
-                        onClick={() => dispatch(deleteProduct(product))}
-                      >
-                        remove
-                      </button>
+                      <div className="d-flex gap-2 justify-content-center">
+                        <button
+                          className={"btn btn-outline-danger mt-2"}
+                          onClick={() => dispatch(deleteProduct(product))}
+                        >
+                          remove
+                        </button>
+                        <Link
+                          to={`/${product.id}`}
+                          className={"btn btn-outline-danger mt-2"}
+                        >
+                          information
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </section>

@@ -28,55 +28,54 @@ const AddNewProduct = () => {
       }),
     })
       .then((res) => res.json())
-      .then(() => navite());
+      .then(() => navite("/dashboard/ProductsManagement"))
+      .catch((err) => console.error("cant get product", err));
   };
 
   return (
-    <>
-      <div style={{ height: "calc(100vh - 56px)" }} className={"flex-center"}>
-        <form className="product-form" onSubmit={PostProducts}>
-          <label>
-            <span>product title</span>
-            <input
-              type="text"
-              className="product-faild"
-              onChange={(e) => setTitle(e.target.value)}
-            />
-          </label>
+    <div style={{ height: "calc(100vh - 56px)" }} className={"flex-center"}>
+      <form className="product-form" onSubmit={PostProducts}>
+        <label>
+          <span>product title</span>
+          <input
+            type="text"
+            className="product-faild"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </label>
 
-          <label>
-            <span>price</span>
-            <input
-              type="number"
-              className="product-faild"
-              onChange={(e) => setPrice(e.target.value)}
-            />
-          </label>
+        <label>
+          <span>price</span>
+          <input
+            type="number"
+            className="product-faild"
+            onChange={(e) => setPrice(e.target.value)}
+          />
+        </label>
 
-          <label>
-            <span>category</span>
-            <input
-              type="text"
-              className="product-faild"
-              onChange={(e) => setCategory(e.target.value)}
-            />
-          </label>
+        <label>
+          <span>category</span>
+          <input
+            type="text"
+            className="product-faild"
+            onChange={(e) => setCategory(e.target.value)}
+          />
+        </label>
 
-          <label>
-            <span>link photo</span>
-            <input
-              type="text"
-              className="product-faild"
-              onChange={(e) => setPhoto(e.target.value)}
-            />
-          </label>
+        <label>
+          <span>link photo</span>
+          <input
+            type="text"
+            className="product-faild"
+            onChange={(e) => setPhoto(e.target.value)}
+          />
+        </label>
 
-          <label></label>
+        <label></label>
 
-          <button className="submit">add product</button>
-        </form>
-      </div>
-    </>
+        <button className="submit">add product</button>
+      </form>
+    </div>
   );
 };
 
