@@ -25,7 +25,9 @@ firsst project work with team
 
 # skills used in applcation
 
-<h1> back end php (laravel) =>  [to login only] </h1>
+<h5> back end php (laravel) =>  [to login only] </h1>
+
+
 - json => products
 - react js
 - bootstrap
