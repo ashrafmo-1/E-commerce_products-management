@@ -10,6 +10,7 @@ firsst project work with team
 - send message by form (feedback)
 - => [ we work in app right now ]
 
+
 # futuers admin ecommerce applcation
 - full dashboard
 - show users {signup only}
@@ -21,3 +22,17 @@ firsst project work with team
 - add product
 - remove product
 - edit product
+
+# skills used in applcation
+
+- back end php (laravel) =>  [to login only]
+- json => products
+- react js
+- bootstrap
+- react Bootstrap
+- react router
+- react icon => https://react-icons.github.io/react-icons/
+- axios
+- redux
+- redux toolkit
+- 
