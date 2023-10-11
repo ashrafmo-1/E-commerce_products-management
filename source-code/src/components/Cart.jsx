@@ -88,8 +88,7 @@ const Cart = () => {
                           {product.quantity * product.price}
                         </button>
                         <button className={"btn btn-outline-secondary"}>
-                          {" "}
-                          {product.quantity}{" "}
+                          {product.quantity}
                         </button>
                         <button
                           className={"btn btn-outline-danger"}
@@ -105,12 +104,6 @@ const Cart = () => {
                         >
                           remove
                         </button>
-                        <Link
-                          to={`/${product.id}`}
-                          className={"btn btn-outline-danger mt-2"}
-                        >
-                          information
-                        </Link>
                       </div>
                     </div>
                   </div>

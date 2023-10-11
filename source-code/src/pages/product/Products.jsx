@@ -41,17 +41,26 @@ export default function Products() {
                     {<FaStar />}
                   </div>
                 </div>
-                <div
-                  className="addTOCart"
-                  onClick={() => {
-                    dispatch(add(prod));
-                    localStorage.setItem(
-                      "product-information",
-                      JSON.stringify(prod)
-                    );
-                  }}
-                >
-                  add to cart <FaCartShopping />
+                <div className="flex-center gap-2">
+                  <div
+                    className="btn btn-outline-success mt-2"
+                    onClick={() => {
+                      dispatch(add(prod));
+                      localStorage.setItem(
+                        "product-information",
+                        JSON.stringify(prod)
+                      );
+                    }}
+                  >
+                    add cart
+                    <FaCartShopping />
+                  </div>
+                  <Link
+                    to={`/${prod.id}`}
+                    className={"btn btn-outline-danger mt-2"}
+                  >
+                    information
+                  </Link>
                 </div>
               </div>
             </div>

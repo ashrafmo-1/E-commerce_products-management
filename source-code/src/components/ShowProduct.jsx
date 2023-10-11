@@ -3,13 +3,16 @@ import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import "./showProduct.css";
 import NavgationBar from "./NavgationBar";
+import { useDispatch } from "react-redux";
+import { add } from "../Redux/slices/Cart-slice";
 
 const ShowProduct = () => {
   const { productInformation } = useParams();
   const [product, setProduct] = useState([]);
+  // add product to cart and handel quantity
+  const dispatsh = useDispatch();
 
   const API = `https://database-products.onrender.com/products/${productInformation}`;
-
   useEffect(() => {
     fetch(API)
       .then((res) => res.json())
@@ -26,15 +29,15 @@ const ShowProduct = () => {
             <span className="catigory">{product.category}</span>
             <h2 className="title mb-4">{product.title}</h2>
             <p className="description mb-3"> {product.description} </p>
-            <div className="d-flex gap-5 align-items-center">
-              <div className="quantity flex-center gap-3">
-                <button className="btn btn-success">+</button>
-                <span>1</span>
-                <button className="btn btn-danger">-</button>
-              </div>
-              <p className="price flex-center">$999</p>
+            <div className="flex-center gap-2">
+              <p className="price flex-center">price $999</p>
+              <p
+                className="add-to-cart btn"
+                onClick={() => dispatsh(add(product))}
+              >
+                add to cart
+              </p>
             </div>
-            <p className="add-to-cart btn mt-4">add to cart</p>
           </div>
         </div>
       </Container>
