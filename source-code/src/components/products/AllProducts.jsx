@@ -1,43 +1,78 @@
-import { useEffect, useState } from "react";
-import "./Products.css";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FaCartShopping } from "react-icons/fa6";
-import { FaStar } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
+import MainHeader from "../MainHeader";
+import NavgationBar from "../NavgationBar";
+import { Link } from "react-router-dom";
+import { FaCartShopping, FaStar } from "react-icons/fa6";
 import { add } from "../../Redux/slices/Cart-slice";
 
-export default function Products() {
+const AllProducts = () => {
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
   const dispatch = useDispatch();
+  // all apis
+  const apiGET = "https://database-products.onrender.com/products";
+  const apiCategory = "https://fakestoreapi.com/products/categories";
 
-  const api = "https://database-products.onrender.com/products";
-  useEffect(() => {
-    fetch(api)
+  // all fitches
+  // get all products
+  const GETALLPRODUCTS = () => {
+    fetch(apiGET)
       .then((response) => response.json())
-      .then((data) => setProducts(data.slice(0, 8)))
-      .catch((error) => console.error("cant get any products", error));
+      .then((data) => setProducts(data));
+  };
+  // get all categories
+  const GETALLCategory = () => {
+    fetch(apiCategory)
+      .then((response) => response.json())
+      .then((data) => setCategories(data));
+  };
+
+  // get product on click product  const GETALLCategory
+  const getProductByCatigory = (cat) => {
+    fetch(`https://fakestoreapi.com/products/category/${cat}`)
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  };
+
+  useEffect(() => {
+    GETALLPRODUCTS();
+    GETALLCategory();
   }, []);
 
   return (
     <div className="product master-producs-home pb-5">
+      <MainHeader />
+      <NavgationBar />
       <Container fluid className="pt-5">
-        <h1 className="main-title d-flex justify-content-between align-items-center">
-          main Product
-          <Link to={"/allproducts"} className="btn btn-outline-success mb-2">
-            show more
-          </Link>
-        </h1>
+        <div className="text-center">
+          <button
+            className="btn btn-success mx-1"
+            onClick={() => GETALLPRODUCTS()}
+          >
+            all
+          </button>
+          {categories.map((category) => (
+            <button
+              className="btn btn-success mx-1"
+              key={category}
+              onClick={() => {
+                getProductByCatigory(category);
+              }}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
         <div className="products-container col-lg-16 pt-5 gap-3">
+          {/* All products from api */}
           {products.map((prod) => (
             <div className={"product-card"} key={prod.id}>
               <img className="product-image" src={prod.image} alt="product" />
               <div className="card-content-body">
                 <div className="card-title">{prod.title.slice(0, 10)}</div>
-                <div className="card-description">
-                  {prod.description.slice(0, 60)}
-                </div>
-                <div className="d-flex justify-content-between align-items-center mt-3">
+                <div className="d-flex justify-content-between align-items-center mt-5">
                   <div className="card-price">${prod.price}</div>
                   <div className="card-rate">
                     {prod.rating.rate}
@@ -72,4 +107,6 @@ export default function Products() {
       </Container>
     </div>
   );
-}
+};
+
+export default AllProducts;
