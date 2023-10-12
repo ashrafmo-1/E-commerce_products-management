@@ -7,16 +7,16 @@ import { FaBarsStaggered } from "react-icons/fa6";
 
 const NavgationBar = () => {
   return (
-    <Navbar expand="lg" data-bs-theme="dark" className="bg-warning bg-gradient">
+    <Navbar expand="lg" data-bs-theme="dark" className="bg-color bg-gradient">
       <Container>
         <button className="btn btn-outline-dark" style={{ marginRight: "10px" }}>
           {" "}
           <FaBarsStaggered />{" "}
         </button>
-        <Link to="/" className={"fw-bold fs-5 text-dark"}>
+        <Link to="/" className={"fw-bold fs-5 text-light"}>
           Dragon store
         </Link>
-        <Navbar.Toggle className="bg-danger" aria-controls="navbarScroll" />
+        <Navbar.Toggle className="bg-primary" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="ms-auto my-lg-0 gap-3"

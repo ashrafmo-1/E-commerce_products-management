@@ -5,6 +5,7 @@ import "./showProduct.css";
 import NavgationBar from "./NavgationBar";
 import { useDispatch } from "react-redux";
 import { add } from "../Redux/slices/Cart-slice";
+import { Link } from "react-router-dom";
 
 const ShowProduct = () => {
   const { productInformation } = useParams();
@@ -37,6 +38,10 @@ const ShowProduct = () => {
               >
                 add to cart
               </p>
+            </div>
+
+            <div className="flex-center mt-3">
+              <Link to='/' className=" btn btn-outline-primary"> Back To Home </Link>
             </div>
           </div>
         </div>
