@@ -3,9 +3,10 @@ import Swiper from "../../components/Home/Swiper";
 import Product from "../product/Products";
 import NavgationBar from "../../components/NavgationBar";
 import Offer from "../../components/Offer";
-import bgOffer from "../../assets/images/a6.jpg";
 import MainHeader from "../../components/MainHeader";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
   return (
@@ -19,12 +20,12 @@ const Home = () => {
       >
         <Swiper />
         <div className="home-header-imagebg">
-          <img
-            src={bgOffer}
-            alt=""
-            className="w-100"
-            style={{ height: "300px" }}
-          />
+          <div className="content">
+            <p>dragon store</p>
+            <Link to="/allproducts" className="btn btn-success">
+              dragon store
+            </Link>
+          </div>
         </div>
       </div>
       <Brands />

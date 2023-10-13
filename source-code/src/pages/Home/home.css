@@ -1,0 +1,25 @@
+.home-header-imagebg {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.500)), url(../../assets/images/a6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30% !important;
+    height: 300px !important;
+}
+
+.home-header-imagebg .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home-header-imagebg .content p {
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+.home-header-imagebg .content a {
+    font-size: 22px;
+}
