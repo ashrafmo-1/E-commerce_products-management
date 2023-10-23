@@ -8,7 +8,7 @@ import {
   deleteAll,
   deleteProduct,
   increment,
-} from "../Redux/slices/Cart-slice";
+} from "../../Redux/slices/Cart-slice";
 import { Link } from "react-router-dom";
 
 const Cart = () => {

@@ -8,8 +8,9 @@ import ProductsManagement from "./components/Dashboard/Products-management";
 import DashContent from "./components/Dashboard/DashContent";
 import ShowUser from "./components/Dashboard/ShowUser";
 import AddNewProduct from "./components/Dashboard/AddNewProduct";
-import ShowProduct from "./components/ShowProduct";
+import ShowProduct from "./components/showProducts/ShowProduct";
 import AllProducts from "./components/products/AllProducts";
+import Services from "./pages/services/Services1";
 
 function App() {
   return (
@@ -26,9 +27,10 @@ function App() {
         </Route>
         <Route path="/:productInformation" element={<ShowProduct />} />
         <Route path="/allproducts" element={<AllProducts />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </>
   );
-}
+} 
 
 export default App;

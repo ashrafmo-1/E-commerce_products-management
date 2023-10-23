@@ -2,18 +2,18 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-import Cart from "./Cart";
-import { FaBarsStaggered } from "react-icons/fa6";
+import Cart from "./cart/Cart";
 
 const NavgationBar = () => {
   return (
     <Navbar expand="lg" data-bs-theme="dark" className="bg-color bg-gradient">
       <Container>
-        <button className="btn btn-outline-dark" style={{ marginRight: "10px" }}>
-          {" "}
-          <FaBarsStaggered />{" "}
-        </button>
-        <Link to="/" className={"fw-bold fs-5 text-light"}>
+        <Cart />
+        <Link
+          to="/"
+          className={"fw-bold fs-5 text-dark"}
+          style={{ marginLeft: "30px" }}
+        >
           Dragon store
         </Link>
         <Navbar.Toggle className="bg-primary" aria-controls="navbarScroll" />
@@ -23,6 +23,18 @@ const NavgationBar = () => {
             style={{ maxHeight: "120px" }}
             navbarScroll
           >
+            <Link to={"/"} className="nav-link text-dark">
+              home
+            </Link>
+            <Link to={""} className="nav-link text-dark">
+              services
+            </Link>
+            <Link to={""} className="nav-link text-dark">
+              contact us
+            </Link>
+            <Link to={""} className="nav-link text-dark">
+              collaborators
+            </Link>
             {window.localStorage.getItem("email") ? (
               <Link
                 to="/signup"
@@ -40,7 +52,6 @@ const NavgationBar = () => {
                 <div className={"btn btn-dark"}>login/signUp</div>
               </Link>
             )}
-            <Cart />
           </Nav>
         </Navbar.Collapse>
       </Container>

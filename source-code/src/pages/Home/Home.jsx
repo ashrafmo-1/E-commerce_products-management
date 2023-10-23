@@ -3,7 +3,7 @@ import Swiper from "../../components/Home/Swiper";
 import Product from "../product/Products";
 import NavgationBar from "../../components/NavgationBar";
 import Offer from "../../components/Offer";
-import MainHeader from "../../components/MainHeader";
+import MainHeader from "../../components/mainheader/MainHeader";
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import "./home.css";
@@ -23,7 +23,7 @@ const Home = () => {
           <div className="content">
             <p>dragon store</p>
             <Link to="/allproducts" className="btn btn-success">
-              dragon store
+              loin to shoping
             </Link>
           </div>
         </div>

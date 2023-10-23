@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import MainHeader from "../MainHeader";
+import MainHeader from "../mainheader/MainHeader";
 import NavgationBar from "../NavgationBar";
 import { Link } from "react-router-dom";
 import { FaCartShopping, FaStar } from "react-icons/fa6";

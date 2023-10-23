@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import "./showProduct.css";
-import NavgationBar from "./NavgationBar";
+import NavgationBar from "../NavgationBar";
 import { useDispatch } from "react-redux";
-import { add } from "../Redux/slices/Cart-slice";
+import { add } from "../../Redux/slices/Cart-slice";
 import { Link } from "react-router-dom";
 
 const ShowProduct = () => {
